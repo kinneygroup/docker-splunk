@@ -46,6 +46,7 @@ rm -f get-pip.py
 ln -sf /usr/bin/python3 /usr/bin/python
 
 # Install splunk-ansible dependencies
+pip -q --no-cache-dir install --upgrade Mako avro lxml protobuf
 pip install setuptools
 pip install six
 pip install wheel
@@ -53,6 +54,7 @@ pip install requests
 pip install cryptography==3.3.2
 pip install jmespath
 pip install urllib3==1.26.5 
+pip install ansible
 cd /
 
 # Remove tests packaged in python libs
