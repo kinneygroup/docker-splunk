@@ -12,7 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM amazonlinux:2023
+ARG BASE_IMAGE=amazonlinux:2023
+FROM ${BASE_IMAGE}:latest as package
 
 LABEL name="splunk" \
       maintainer="support@splunk.com" \
