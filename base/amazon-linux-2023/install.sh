@@ -46,8 +46,7 @@ rm -f get-pip.py
 ln -sf /usr/bin/python3 /usr/bin/python
 
 # Install splunk-ansible dependencies
-pip install setuptools
-pip -q --no-cache-dir install six wheel requests cryptography==3.3.2 ansible==3.4.0 urllib3==1.26.5 jmespath --upgrade
+pip install setuptools six wheel requests cryptography==3.3.2 ansible==3.4.0 urllib3==1.26.5 jmespath --upgrade
 cd /
 
 # Remove tests packaged in python libs

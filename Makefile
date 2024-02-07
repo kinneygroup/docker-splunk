@@ -205,6 +205,7 @@ splunk-windows-2016: base-windows-2016 ansible
 		-t splunk-windows-2016:${IMAGE_VERSION} .
 
 splunk-amazon-linux-2023: base-amazon-linux-2023 ansible
+	echo "Hello!"
 	docker build ${DOCKER_BUILD_FLAGS} \
         --platform=linux/arm64/v8 \
 		-f splunk/common-files/Dockerfile \
