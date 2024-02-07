@@ -46,7 +46,12 @@ rm -f get-pip.py
 ln -sf /usr/bin/python3 /usr/bin/python
 
 # Install splunk-ansible dependencies
-pip install setuptools six wheel requests cryptography==3.3.2 ansible==3.4.0 jmespath
+pip install setuptools
+pip install six
+pip install wheel
+pip install requests
+pip install cryptography==3.3.2
+pip install jmespath
 pip install urllib3==1.26.5 
 cd /
 
