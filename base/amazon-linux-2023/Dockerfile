@@ -13,7 +13,7 @@
 # limitations under the License.
 
 ARG BASE_IMAGE=amazonlinux:2023
-FROM ${BASE_IMAGE}:latest as package
+FROM ${BASE_IMAGE} as package
 
 LABEL name="splunk" \
       maintainer="support@splunk.com" \
