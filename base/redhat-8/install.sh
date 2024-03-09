@@ -61,7 +61,7 @@ ln -sf /usr/bin/pip${PY_SHORT} /usr/bin/pip
 
 # Install splunk-ansible dependencies
 cd /
-/usr/bin/python3.7 -m pip install --upgrade pip
+/usr/bin/python -m pip install --upgrade pip
 pip -q --no-cache-dir install --upgrade six wheel requests Mako urllib3 certifi jmespath future avro cryptography lxml protobuf setuptools ansible
 
 # Remove tests packaged in python libs
